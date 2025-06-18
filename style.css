@@ -86,16 +86,57 @@ nav .container {
     cursor: pointer;
     font-size: 1.5rem;
 }
-
 /* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 8rem 0 4rem;
-  
     color: white;
     position: relative;
+    background-color: #000;
+    overflow: hidden; /* For particle animation */
+}
+
+/* Particle Animation Background */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(45, 45, 45, 0.8) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(45, 45, 45, 0.6) 0%, transparent 40%);
+    animation: pulse 15s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+        background-size: 100% 100%;
+    }
+    100% {
+        opacity: 0.7;
+        background-size: 150% 150%;
+    }
+}
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: float linear infinite;
+    z-index: -1;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-20px);
+    }
 }
 
 .containers {
@@ -113,47 +154,68 @@ nav .container {
     align-items: flex-start;
     padding: 20px;
     position: relative;
-    top: -20px;     /* 🔧 Move image up/down */
-    left: -20px;    /* 🔧 Move image left/right */
 }
 
+/* Enhanced Image Styling with Animation */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: -40px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 30px rgba(241, 184, 68, 0.3);
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 2px dashed rgba(241, 184, 68, 0.4);
+    top: -15px;
+    left: -15px;
+    animation: rotate 30s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text Animation */
 .hero-text-container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 20px;
     position: relative;
-    top: 0px;       /* 🔧 Move text up/down */
-    right: -10px;   /* 🔧 Move text left/right */
 }
-
-/* --- Keep your original styles --- */
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: -30px;
-    margin-left: -20px;
-}
-
-.hero-image img {
-    width: 400px;          /* fixed width */
-    height: 400px;         /* same height to form circle */
-    border-radius: 50%;    /* makes it a circle */
-    object-fit: cover;     /* fills circle nicely, crops if needed */
-    display: block;        /* remove inline gap */
-}
-
 
 .hero-text h1 {
     font-size: 3.3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-}
-
-.hero-text h1 span {
-    color: var(--accent);
+    animation: fadeInUp 1s ease;
 }
 
 .hero-text h2 {
@@ -161,18 +223,36 @@ nav .container {
     font-weight: 400;
     margin-bottom: 1.5rem;
     color: var(--accent);
+    animation: fadeInUp 1s ease 0.2s forwards;
+    opacity: 0;
 }
 
 .hero-text p {
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    animation: fadeInUp 1s ease 0.4s forwards;
+    opacity: 0;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
+    animation: fadeInUp 1s ease 0.6s forwards;
+    opacity: 0;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Enhancements */
 .btn {
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
@@ -180,6 +260,8 @@ nav .container {
     text-decoration: none;
     transition: all 0.3s;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-primary {
@@ -190,7 +272,7 @@ nav .container {
 .btn-primary:hover {
     background-color: #f1b844;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(241, 184, 68, 0.4);
 }
 
 .btn-outline {
@@ -203,9 +285,60 @@ nav .container {
     background-color: var(--accent);
     color: var(--dark);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(241, 184, 68, 0.4);
+}
+/*=====================================================BG ANIMATION EXAMPLE===============*
+/* Add to your CSS */
+.bg-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, 
+              rgba(241, 184, 68, 0.1) 0%, 
+              rgba(0, 0, 0, 1) 70%);
+  opacity: 0.5;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(241, 184, 68, 0.3);
+  border-radius: 50%;
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px);
+    opacity: 0;
+  }
+}
 
 /* Sections */
 .section {
@@ -754,6 +887,7 @@ footer {
     .hero-image {
         order: 1;
         margin-bottom: 2rem;
+        left: 20px;
     }
     
     .about-image {
