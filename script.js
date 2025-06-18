@@ -95,3 +95,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
 });
+
+
+//=====================================Certifications section ===========================================
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById("toggleCertsBtn");
+  const extraCerts = document.getElementById("extraCerts");
+  let isExpanded = false;
+
+  toggleBtn.addEventListener("click", function() {
+    isExpanded = !isExpanded;
+    
+    // Toggle the display
+    if (isExpanded) {
+      extraCerts.style.display = "flex";
+      toggleBtn.textContent = "View Less";
+    } else {
+      extraCerts.style.display = "none";
+      toggleBtn.textContent = "View All Certifications";
+    }
+    
+    // Smooth scroll to button if expanding
+    if (isExpanded) {
+      setTimeout(() => {
+        toggleBtn.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    }
+  });
+});
