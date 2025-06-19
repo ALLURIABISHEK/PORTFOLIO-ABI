@@ -94,7 +94,7 @@ nav .container {
     padding: 8rem 0 4rem;
     color: white;
     position: relative;
-    background-color: #000;
+    background-color: none;
     overflow: hidden; /* For particle animation */
 }
 
@@ -376,6 +376,7 @@ nav .container {
 .section-title p {
     color: #4e4d4d;
     margin-top: 1rem;
+    font-size: 35px;
 }
 
 /* Projects Section */
@@ -503,12 +504,24 @@ nav .container {
 }
 
 /*========================================CERTIFICATIONS SECTION========================================*/
+
 .certifications-section {
-  padding: 4rem 2rem;
-  color: white;
-  text-align: center;
-  /* Dark background */
+    padding: 4rem 0;
+    background:none;
+    color: white;
+    min-height: 100vh;
 }
+
+.certifications-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Reuse existing .section-header, .section-title, .section-subtitle styles */
+/* You already defined them, so no need to rewrite unless you want to tweak spacing */
+
+
 
 .section-title {
   font-size: 2.2rem;
@@ -516,13 +529,7 @@ nav .container {
   color: #ffd700;
 }
 
-.cert-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .visible-certs, .extra-certs {
   display: flex;
@@ -537,7 +544,7 @@ nav .container {
 }
 
 .cert-card {
-     background-color: #1e1e1e;
+     background-color: none;
   padding: 1.5rem;
   border-radius: 15px;
   width: 320px;
@@ -645,81 +652,358 @@ nav .container {
 }
 
 /*=================================================== Skills Section================================== */
-.skills-section {
- 
-  padding: 4rem 2rem;
-}
+ .skills-section {
+            padding: 4rem 0;
+            background: none;
+            color: white;
+            min-height: 100vh;
+        }
 
-.section-header {
-  text-align: left;
-  margin-bottom: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
+        .skills-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-.section-title {
-  font-size: 2.2rem;
-  color: white;
-  margin-bottom: 0.5rem;
-  
-}
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
 
-.section-underline {
-  width: 100px;
-  height: 3px;
-  background-color: white;
-}
+        .section-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 1rem;
+            position: relative;
+        }
 
-.skills-grid {
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-subtitle::before,
+        .section-subtitle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+        }
+
+        .section-subtitle::before {
+            left: -80px;
+        }
+
+        .section-subtitle::after {
+            right: -80px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Skill Category Cards */
+        .skill-category {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            height: 320px;
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-category:hover::before {
+            opacity: 1;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+        }
+
+        /* Category Header */
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .category-icon {
+            font-size: 1.6rem;
+            color: #ffd700;
+            margin-right: 1rem;
+            width: 35px;
+            text-align: center;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        /* Skills List */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        /* Individual Skill Items */
+        .skill-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-item:hover::before {
+            left: 100%;
+        }
+
+        .skill-item:hover {
+            border-color: rgba(255, 215, 0, 0.4);
+            background: rgba(255, 215, 0, 0.05);
+            transform: scale(1.02);
+        }
+
+        .skill-icon {
+            font-size: 1.2rem;
+            margin-right: 0.8rem;
+            color: #ffd700;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .skill-item:hover .skill-icon {
+            transform: scale(1.1);
+        }
+
+        .skill-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Toggle Button */
+        .toggle-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: transparent;
+            border: 2px solid #ffd700;
+            border-radius: 50px;
+            color: #ffd700;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toggle-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .toggle-btn:hover::before {
+            left: 100%;
+        }
+
+        .toggle-btn:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-icon {
+            transition: transform 0.3s ease;
+        }
+
+        /* Additional Skills Section */
+        .additional-skills-section {
+            display: none;
+            animation: fadeInUp 0.4s ease;
+            margin-top: 2.5rem;
+        }
+
+        .additional-skills-section .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 0;
+        }
+
+
+        /* Grid layout with vertical scroll */
+.skills-list-scrollable {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.3rem;
-  max-width: 100px;
-  margin: 0 auto;
-  position: absolute;
-  left: 100px;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 0.8rem;
+  max-height: 180px; /* Adjust based on your needs */
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ffd700 transparent;
 }
 
-.skill-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: #111;
-  border: 1px solid #333;
-  padding: 0.6rem 1.2rem;
-  border-radius: 12px;
-  color: #ffd700;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+/* Webkit scrollbar styling */
+.skills-list-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+.skills-list-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+.skills-list-scrollable::-webkit-scrollbar-thumb {
+  background-color: #ffd700;
+  border-radius: 3px;
 }
 
-.skill-item:hover {
-  background-color: #222;
-  transform: scale(1.05);
-}
+/* No changes needed to skill-item styles */
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.skill-item svg {
-  width: 24px;
-  height: 24px;
-}
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .additional-skills-section .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .additional-skills-section .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-subtitle::before,
+            .section-subtitle::after {
+                width: 40px;
+            }
+            
+            .section-subtitle::before {
+                left: -50px;
+            }
+            
+            .section-subtitle::after {
+                right: -50px;
+            }
+            
+            .skills-container {
+                padding: 0 1rem;
+            }
+        }
 
-@media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .skill-category {
+                padding: 1.5rem;
+                height: auto;
+            }
+            
+            .category-header {
+                margin-bottom: 1.5rem;
+            }
+            
+            .section-subtitle::before,
+            .section-subtitle::after {
+                display: none;
+            }
+        }
 
-/* About Section */
+* THIS IS FOR THE LINES */
+
+/* =========================================About Section ===========================*/
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;

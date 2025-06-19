@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABISHEK KUMAR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    /* Add Font Awesome CSS (include this in your head) */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -145,7 +147,11 @@
 
 <!--======================CERTIFICATIONS======================-->
 <section class="certifications-section"id="certifications">
-  <h2 class="section-title">Certifications</h2>
+   <div class="certifications-container">
+        <div class="section-header">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">I've Earned</p>
+        </div>
 
   <div class="cert-container">
     <!-- First 3 visible cards -->
@@ -244,60 +250,211 @@ Completed a foundational course on Microsoft Azure, covering key cloud concepts,
 
 
     <!--=============================== Skills Section =========================================-->
-   <section id="skills" class="skills-section">
-  <div class="section-title">Programming Languages</div>
-  <div class="skills-grid">
+ <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Technologies</h2>
+                <p class="section-subtitle">I've Worked With</p>
+            </div>
 
-    <div class="skill-item">
-      <!-- C Icon (simple circuit chip as placeholder) -->
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffd700" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L15 5H21V19H15L12 22L9 19H3V5H9L12 2Z" />
-      </svg>
-      <span>C</span>
-    </div>
+            <!-- Skills Grid (Top 3) -->
+            <div class="skills-grid">
+                
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code category-icon"></i>
+                        <h3 class="category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python skill-icon"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java skill-icon"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="skill-item">
-      <!-- Python Icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffd700" viewBox="0 0 24 24">
-        <path d="M12.09 0c-1.87.01-3.48.16-4.95.43-4.37.8-5.14 2.48-5.14 5.6v3.97h9.92v1.32H2.69c-1.51 0-2.8 1.22-2.68 2.75.12 1.45 1.31 2.5 2.79 2.5h2.13v-1.74h10.56c1.34 0 2.44-1.1 2.44-2.44V5.61c0-3.52-2.77-5.58-5.94-5.61zm-2.23 2.09c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25A1.25 1.25 0 0 1 8.61 3.34c0-.69.56-1.25 1.25-1.25zM21.31 9.43h-2.14v1.74H8.61c-1.34 0-2.44 1.1-2.44 2.44v7.3c0 3.51 2.78 4.8 5.94 4.8 1.8 0 3.39-.17 4.85-.43 4.37-.8 5.15-2.47 5.15-5.59v-3.97h-9.92v-1.33h9.92c1.51 0 2.8-1.22 2.68-2.75-.12-1.45-1.31-2.5-2.79-2.5zm-6.08 10.44c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25a1.25 1.25 0 0 1-1.25-1.25c0-.69.56-1.25 1.25-1.25z"/>
-      </svg>
-      <span>Python</span>
-    </div>
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group category-icon"></i>
+                        <h3 class="category-title">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-flask skill-icon"></i>
+                            <span class="skill-name">Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <span class="skill-name">PyTorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye skill-icon"></i>
+                            <span class="skill-name">OpenCV</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot skill-icon"></i>
+                            <span class="skill-name">Transformers</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt skill-icon"></i>
+                            <span class="skill-name">Flask-CORS</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="skill-item">
-      <!-- Java Icon (coffee cup-style simplified flame) -->
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffd700" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0s3.25 3.75 0 6.5C8.75 3.75 12 0 12 0zM7.5 14h9s-1.5 1-4.5 1-4.5-1-4.5-1zm0 2h9c.5 0 .5.5 0 .5h-9c-.5 0-.5-.5 0-.5zm0 2h9c.5 0 .5.5 0 .5h-9c-.5 0-.5-.5 0-.5zm10-8s-1 1.5-5 1.5S7.5 10 7.5 10s1.5-1 4.5-1 5 1 5 1z"/>
-      </svg>
-      <span>Java</span>
-    </div>
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database category-icon"></i>
+                        <h3 class="category-title">Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools skill-icon"></i>
+                            <span class="skill-name">phpMyAdmin</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf skill-icon"></i>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="skill-item">
-      <!-- HTML Icon -->
-      <svg width="24" height="24" viewBox="0 0 128 128" fill="#ffd700" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 0l9 107.5 37 10.5 37-10.5 9-107.5h-92zm71.4 37.2h-41.8l.9 9.9h39.9l-3.1 35-24.2 6.7v.1h-.1l-24.3-6.7-1.7-19.4h9.9l.9 10.1 15.2 4.1h.1v-.1l15.2-4.1 1.6-18.5h-42.3l-2.6-30.1h51.4l-1.2 13.9z"/>
-      </svg>
-      <span>HTML</span>
-    </div>
+            </div>
 
-    <div class="skill-item">
-      <!-- CSS Icon -->
-      <svg width="24" height="24" viewBox="0 0 128 128" fill="#ffd700" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 0l9 107.5 37 10.5 37-10.5 9-107.5h-92zm66.3 97.7l-28.3 8.1-28.3-8.1-1.9-21.1h9.5l1.1 11.9 19.6 5.6 19.6-5.6 2-23.1h-42.5l-2.7-30.3h48.8l-1.1 12.8h-36.4l.9 9.9h35.1l-2.4 27z"/>
-      </svg>
-      <span>CSS</span>
-    </div>
+            <!-- Toggle Button for Additional Skills -->
+            <div class="toggle-container">
+                <button id="skillsToggleBtn" class="toggle-btn">
+                    <span class="btn-text">View All</span>
+                    <i class="fas fa-chevron-down btn-icon"></i>
+                </button>
+            </div>
 
-    <div class="skill-item">
-      <!-- JavaScript Icon -->
-      <svg width="24" height="24" viewBox="0 0 128 128" fill="#ffd700" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#000" d="M68.795 107.091c2.014 3.27 4.656 5.67 9.312 5.67 3.91 0 6.387-1.956 6.387-4.656 0-3.24-2.567-4.387-6.865-6.258l-2.353-.999c-6.797-2.89-11.3-6.516-11.3-14.173 0-7.053 5.374-12.445 13.768-12.445 5.97 0 10.26 2.086 13.325 7.536l-7.29 4.673c-1.605-2.89-3.337-4.026-6.035-4.026-2.75 0-4.5 1.75-4.5 4.026 0 2.817 1.75 3.963 5.796 5.67l2.352 1.008c8 3.436 12.504 6.828 12.504 14.713 0 8.428-6.626 13.055-15.525 13.055-8.705 0-14.287-4.162-17.019-9.615zm-33.87.809c1.49 2.63 2.848 4.848 6.09 4.848 3.11 0 5.07-1.223 5.07-5.968V62.89h9.35v44.122c0 9.69-5.676 14.11-13.967 14.11-7.482 0-11.835-3.888-14.072-8.627z"/>
-      </svg>
-      <span>JavaScript</span>
-    </div>
+            <!-- Hidden Additional Skills Section (Bottom 3) -->
+            <div class="additional-skills-section" id="additionalSkillsSection">
+                <div class="skills-grid">
+                    
+                    <!-- Tools & Editors -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools category-icon"></i>
+                            <h3 class="category-title">Tools & Editors</h3>
+                        </div>
+                        <div class="skills-list skills-list-scrollable">
+                            <div class="skill-item">
+                                <i class="fas fa-code skill-icon"></i>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-book skill-icon"></i>
+                                <span class="skill-name">Jupyter Notebook</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-lightbulb skill-icon"></i>
+                                <span class="skill-name">IntelliJ IDEA</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github skill-icon"></i>
+                                <span class="skill-name">GitHub Desktop</span>
+                            </div>
+                       <div class="skill-item">
+  <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" aria-hidden="true">
+    <!-- Background circle with white border -->
+    <circle cx="128" cy="128" r="120" fill="yellow" stroke="white" stroke-width="8"/>
+    <!-- Black rays -->
+    <path d="M36 128h184v12H36zM36 108h184v12H36zM36 148h184v12H36z" fill="black"/>
+    <!-- White crescent -->
+    <path d="M128 8a120 120 0 0 0 0 240c-52-20-80-80-80-120s28-100 80-120z" fill="white"/>
+  </svg>
+  <span class="skill-name">Eclipse</span>
+</div>
+                        </div>
+                    </div>
 
-  </div>
-</section>
+                    <!-- APIs -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-plug category-icon"></i>
+                            <h3 class="category-title">Integrated APIs</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fas fa-robot skill-icon"></i>
+                                <span class="skill-name">Gemini API</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain skill-icon"></i>
+                                <span class="skill-name">Hugging Face API</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs skill-icon"></i>
+                                <span class="skill-name">Replicate API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI/ML Models -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-microchip category-icon"></i>
+                            <h3 class="category-title">AI/ML Models</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fas fa-robot skill-icon"></i>
+                                <span class="skill-name">BLIP-2</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-project-diagram skill-icon"></i>
+                                <span class="skill-name">GIT</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-eye skill-icon"></i>
+                                <span class="skill-name">CLIP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-text-height skill-icon"></i>
+                                <span class="skill-name">ViT-GPT</span>
+                            </div>
+                           <div class="skill-item">
+  <i class="fas fa-bolt skill-icon"></i>
+  <span class="skill-name" style="min-width: 150px; display: inline-block;">Gemini 1.5 Flash</span>
+</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -360,8 +517,8 @@ Completed a foundational course on Microsoft Azure, covering key cloud concepts,
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> aaarts45516@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9704751165</p>
                     <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
                     
                     <div class="social-links">

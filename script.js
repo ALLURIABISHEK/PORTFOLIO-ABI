@@ -231,4 +231,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-////////////////////////////
+////////////////////////////AI Models Section Toggle
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('skillsToggleBtn');
+            const additionalSection = document.getElementById('additionalSkillsSection');
+            const btnText = toggleBtn.querySelector('.btn-text');
+            const btnIcon = toggleBtn.querySelector('.btn-icon');
+            let isExpanded = false;
+
+            toggleBtn.addEventListener('click', function() {
+                if (isExpanded) {
+                    additionalSection.style.display = 'none';
+                    btnText.textContent = 'View All';
+                    btnIcon.style.transform = 'rotate(0deg)';
+                    isExpanded = false;
+                } else {
+                    additionalSection.style.display = 'block';
+                    btnText.textContent = 'View Less';
+                    btnIcon.style.transform = 'rotate(180deg)';
+                    isExpanded = true;
+                }
+            });
+        });
