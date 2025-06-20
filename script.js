@@ -254,3 +254,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+
+/*========================++++++++++++++==============END OF THE NAV BAR DESIGN FOR THE MOBILE VIEW===================+++++++++++++++++*/
+
+
+
+ const tabs = document.querySelectorAll('.mobile-tab-bar .tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
