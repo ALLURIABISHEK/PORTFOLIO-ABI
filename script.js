@@ -164,3 +164,31 @@ document.addEventListener('DOMContentLoaded', function() {
       tab.classList.add('active');
     });
   });
+
+
+
+
+  //======================================================
+// Wait for DOM to be fully loaded
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Swiper
+    var swiper = new Swiper(".projectsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+});
