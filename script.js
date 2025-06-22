@@ -231,27 +231,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/////////
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+    // Get only the values we want in the email
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     
-    // Create the mailto link
-    const mailtoLink = `mailto:aaarts45516@gmail.com?subject=${encodeURIComponent(subject || 'Contact Form Submission')}&body=${encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
+    // Create mailto link with ONLY your email and the message
+    const mailtoLink = `mailto:aaarts45516@gmail.com?subject=${encodeURIComponent(subject || 'Message from Website')}&body=${encodeURIComponent(message)}`;
     
-    // Open the user's email client
+    // Open email client
     window.location.href = mailtoLink;
     
-    // Optional: Show confirmation message
-    alert("Your email client will open with the message pre-filled. Please click send to complete the process.");
+    // Optional: Clear just the message field after sending
+    document.getElementById('message').value = '';
     
-    // Optional: Reset the form
-    this.reset();
+    // Optional: Show brief confirmation
+    alert("Your email client is opening with the message ready to send.");
 });
