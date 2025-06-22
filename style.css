@@ -1615,7 +1615,6 @@ nav .container {
     margin-bottom: 2rem;
     color: #e0e0e0;
     line-height: 1.8;
-    font-family:cursive;
     font-size: 1.1rem;
 }
 .timeline {
@@ -2119,6 +2118,92 @@ nav .container {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Add this to your existing CSS */
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    width: 100% !important;
+}
+
+.contact-grid {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 600px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        max-width: 100% !important;
+        gap: 20px !important;
+    }
+    
+    .info-card, .contact-form {
+        padding: 25px 20px !important;
+    }
+    
+    .contact-section {
+        padding: 60px 0 !important;
+    }
+    
+    .section-header {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-card, .contact-form {
+        padding: 20px 15px !important;
+    }
+    
+    .info-item {
+        padding: 10px !important;
+    }
+    
+    .form-group {
+        margin-bottom: 20px !important;
+    }
+    
+    .submit-btn {
+        padding: 12px 25px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .info-card h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .info-content a, .info-content span {
+        font-size: 1rem !important;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem !important;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem !important;
+    }
+}
 /* ===================== Footer ==================== */
 /* Modern Footer with Shimmer Effect */
 .footer-wave {
