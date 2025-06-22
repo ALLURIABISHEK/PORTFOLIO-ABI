@@ -192,3 +192,40 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
+
+//////////////////////=========================CERTIFICATION FOR THE MOBILE SWIPER
+
+// Add this to your existing JavaScript (after the Projects swiper initialization)
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Certifications Swiper
+  var certSwiper = new Swiper(".certsSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
+  
+  // Keep your existing toggleCertsBtn functionality
+  const toggleCertsBtn = document.getElementById('toggleCertsBtn');
+  const extraCerts = document.getElementById('extraCerts');
+  
+  if (toggleCertsBtn && extraCerts) {
+    toggleCertsBtn.addEventListener('click', function() {
+      const isHidden = extraCerts.style.display === 'none';
+      extraCerts.style.display = isHidden ? 'flex' : 'none';
+      this.textContent = isHidden ? 'Show Less' : 'View All 6 Certifications';
+    });
+  }
+});

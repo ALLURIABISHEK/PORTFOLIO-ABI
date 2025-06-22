@@ -1093,7 +1093,102 @@ nav .container {
     align-items: center;
   }
 }
+/*===================================================CERTIFI SECTION FOR THE MOBILE VIEW ===========================*/
+/* Add these styles to your existing CSS */
 
+/* Mobile Swiper Container (Hidden on Desktop) */
+.mobile-swiper-container {
+  display: none;
+}
+
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .cert-container {
+    display: none;
+  }
+  
+  .mobile-swiper-container {
+    display: block;
+    padding: 0 10px;
+  }
+  
+  .cert-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .cert-img {
+    height: 160px;
+  }
+  
+  .cert-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .cert-desc {
+    font-size: 0.85rem;
+  }
+  
+  /* Swiper Navigation */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffd700 !important;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    margin-top: -20px !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 16px !important;
+  }
+  
+  .swiper-button-prev {
+    left: 5px !important;
+  }
+  
+  .swiper-button-next {
+    right: 5px !important;
+  }
+  
+  /* Swiper Pagination */
+  .swiper-pagination-bullet {
+    background: rgba(255, 215, 0, 0.5) !important;
+    opacity: 1 !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #ffd700 !important;
+  }
+  
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .mobile-swiper-container {
+    display: none;
+  }
+}
 /*=================================================== Skills Section================================== */
  .skills-section {
             padding: 4rem 0;
