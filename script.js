@@ -229,3 +229,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+/////////
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Create the mailto link
+    const mailtoLink = `mailto:aaarts45516@gmail.com?subject=${encodeURIComponent(subject || 'Contact Form Submission')}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+    
+    // Open the user's email client
+    window.location.href = mailtoLink;
+    
+    // Optional: Show confirmation message
+    alert("Your email client will open with the message pre-filled. Please click send to complete the process.");
+    
+    // Optional: Reset the form
+    this.reset();
+});
