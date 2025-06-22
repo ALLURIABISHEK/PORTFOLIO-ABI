@@ -1110,7 +1110,7 @@ nav .container {
 .swiper-slide {
   width: 100%;
   height: auto;
-  padding: 0 15px;
+  padding: 0 0px;
   box-sizing: border-box;
 }
 
@@ -1122,12 +1122,12 @@ nav .container {
   
   .mobile-swiper-container {
     display: block;
-    padding: 0 10px;
+    padding: 0 0px;
   }
   
   .cert-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 350px;
     margin: 0 auto;
   }
   
