@@ -20,7 +20,7 @@
 
 <img align="right" alt="Design Animation" width="400" src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif">
 
-I'm a passionate **Frontend Developer** and **UI/UX Designer** currently pursuing my Master's in Computer Applications at Kristu Jayanti College, Bangalore. I specialize in creating beautiful, responsive web interfaces that combine clean design with smooth functionality.
+I'm a passionate **Frontend Developer** and **SoftWare Developer ** currently pursuing my Master's in Computer Applications at Kristu Jayanti College, Bangalore. I specialize in creating beautiful, responsive web interfaces that combine clean design with smooth functionality.
 
 I love turning creative ideas into interactive digital experiences using modern web technologies. My focus is on building user-friendly websites that look great and work seamlessly across all devices.
 
@@ -46,6 +46,5 @@ I love turning creative ideas into interactive digital experiences using modern 
 
 ### 🚀 **"Crafting Digital Experiences with Clean Code & Creative Design"** ✨
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FALLURIABISHEK&label=Profile%20Views&countColor=%236A5ACD&style=for-the-badge)
 
 </div>
