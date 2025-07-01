@@ -2,7 +2,7 @@
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&size=28&duration=3000&pause=1000&color=6A5ACD&background=00000000&center=true&vCenter=true&multiline=true&width=700&height=100&lines=💻+Frontend+Developer;🎨✨+Creative+Web+Solutions)](https://git.io/typing-svg)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=Course%20Registration%20Hub&fontSize=45&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Streamline%20Academic%20Enrollment&descAlignY=55&descAlign=50)
 
 </div>
 
