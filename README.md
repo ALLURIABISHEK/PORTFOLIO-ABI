@@ -18,7 +18,7 @@
 
 ## 🎯 **About Me**
 
-<img align="right" alt="Design Animation" width="400" src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif">
+<img align="right" alt="Student Registration" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
 
 I'm a passionate **Frontend Developer** and **SoftWare Developer** currently pursuing my Master's in Computer Applications at Kristu Jayanti College, Bangalore. I specialize in creating beautiful, responsive web interfaces that combine clean design with smooth functionality.
 
