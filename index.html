@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABISHEK KUMAR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-
-   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Add this in your <head> -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">ABISHEK  <span>  ALLURI</span></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">ABISHEK <span>ALLURI</span></div>
             <div class="nav-links">
+                <div class="nav-indicator"></div>
                 <a href="#home">Home</a>
                 <a href="#projects">Projects</a>
-                                <a href="#certifications">Certifications</a>
-
+                <a href="#certifications">Certifications</a>
                 <a href="#skills">Skills</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
@@ -37,177 +37,91 @@
         </div>
     </nav>
 
-<!-- Mobile Bottom Nav -->
-<!-- Mobile Bottom Nav -->
-<div class="navg">
-  <a href="#home" class="tab active">
-    <i class="fa-solid fa-house"></i>
-    <span>Home</span>
-  </a>
-  <a href="#projects" class="tab">
-    <i class="fa-solid fa-code"></i>
-    <span>Projects</span>
-  </a>
-  <a href="#certifications" class="tab">
-    <i class="fa-solid fa-bookmark"></i>
-    <span>Certifications</span>
-  </a>
-  <a href="#skills" class="tab">
-    <i class="fa-solid fa-brain"></i>
-    <span>Skills</span>
-  </a>
-  <a href="#contact" class="tab">
-    <i class="fa-solid fa-plug"></i>
-    <span>Contact</span>
-  </a>
-</div>
+    <!-- Mobile Bottom Nav -->
+    <div class="navg glass">
+        <a href="#home" class="tab active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="#projects" class="tab">
+            <i class="fa-solid fa-code"></i>
+            <span>Projects</span>
+        </a>
+        <a href="#certifications" class="tab">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Certifications</span>
+        </a>
+        <a href="#skills" class="tab">
+            <i class="fa-solid fa-brain"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#contact" class="tab">
+            <i class="fa-solid fa-plug"></i>
+            <span>Contact</span>
+        </a>
+    </div>
 
 
     <!-- Hero Section -->
-<section id="home" class="hero">
-    <div id="particles-js"></div>
-    <div class="bg-animation">
-        <div class="particles">
-            <!-- Particles will be added via JavaScript -->
+    <section id="home" class="hero">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
         </div>
-        <div class="gradient-overlay"></div>
-    </div>
-    <div class="containers">
-        <!-- Image Section -->
-        <div class="hero-image-container">
-            <div class="hero-image">
-                <img src="images/graduationpic.JPG" alt="ALLURI ABISHEK KUMAR">
+        <div class="containers">
+            <!-- Text Section (Moved left) -->
+            <div class="hero-text-container">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1 class="reveal-text">Hi, I'm <span>ALLURI ABISHEK KUMAR</span></h1>
+                    <h2 class="reveal-text">Aspiring Software Developer | AI, Web & Scalable Systems</h2>
+                    <p class="reveal-text">
+                        I’m a software developer driven by a passion for building systems that are reliable, scalable,
+                        and impactful. I thrive on solving complex problems, designing elegant solutions, and writing
+                        clean, maintainable code that stands the test of time.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!-- Text Section -->
-        <div class="hero-text-container">
-            <div class="hero-text">
-                <h1>Hi, I'm <span>ALLURI ABISHEK KUMAR</span></h1>
-<h2>Aspiring Software Developer | AI, Web & Scalable Systems</h2>
-             <p>
-      I’m a software developer driven by a passion for building systems that are reliable, scalable, and impactful. I thrive on solving complex problems, designing elegant solutions, and writing clean, maintainable code that stands the test of time. My approach blends systems thinking, technical rigor, and a focus on user experience, ensuring every solution I build is purposeful and efficient.
-</p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <!-- Image Section (Redesigned with Glass Frame) -->
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper" data-tilt data-tilt-max="10">
+                    <div class="hero-image-frame glass">
+                        <img src="images/graduationpic.JPG" alt="ALLURI ABISHEK KUMAR">
+                    </div>
+                    <div class="photo-info glass reveal-text">
+                        <i class="fas fa-code"></i>
+                        <span>Software Developer</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Featured Projects</h2><br>
-                  <p class="section-subtitle">I've developed</p>
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">I've developed</p>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-<img src="images/project1.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>Omni Summarizer</h3>
-                        <span class="project-date">Jan 2025 - May 2025</span>
-<p>An AI-powered multi-modal summarization tool for text, images, PDFs, and more using state-of-the-art language and vision models.</p>
-                       <div class="project-tech">
-    <span>Python</span>
-    <span>Flask</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Gemini API</span>
-    <span>BLIP-2</span>
-    <span>LLaVA</span>
-    <span>MiniGPT-4</span>
-    <span>ViT-GPT2</span>
-    <span>T5</span>
-</div>
-<a href="https://github.com/ALLURIABISHEK/OMNI_SUMMARIZER" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Details</a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-
-<div class="project-card">
-    <div class="project-image">
-        <img src="images/KJC.png" alt="KJC-VOX Project">
-    </div>
-    <div class="project-info">
-        <h3>KJC-VOX</h3>
-        <span class="project-date">Jun 2025 – July 2025</span>
-        <p>KJC-VOX is a role-based academic feedback and communication platform developed under KJSDC. It enables secure JWT login, anonymous student feedback, and role-specific dashboards for students, faculty, and admins. Built using Angular, Java, MongoDB, and Jetty.</p>
-        <div class="project-tech">
-            <span>Java</span>
-            <span>Angular</span>
-            <span>TypeScript</span>
-            <span>Tailwind CSS</span>
-            <span>MongoDB</span>
-            <span>Jetty</span>
-            <span>JavaMail</span>
-        </div>
-        <a href="https://github.com/ALLURIABISHEK/KJC-VOX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Details</a>
-    </div>
-</div>
-
-                <!-- Project 3 -->
-         <div class="project-card">
-    <div class="project-image">
-        <img src="images/HEALTHGUARD.png" alt="HealthGuard AI Project">
-    </div>
-
-    <div class="project-info">
-        <h3>HealthGuard AI</h3>
-        <span class="project-date">Jan 2025 – Present</span>
-
-        <p>
-HealthGuard AI – A Chrome extension that detects and validates medical misinformation in real-time. It combines AI-powered analysis with intuitive visual feedback to help users access reliable health information instantly.        </p>
-
-        <div class="project-tech">
-            <span>Chrome Extension</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Python</span>
-            <span>Flask</span>
-            <span>Gemini API</span>
-            <span>REST APIs</span>
-        </div>
-
-        <a href="https://github.com/Joeld0013/SDG_CUREINTEL"
-           class="btn btn-primary"
-           target="_blank"
-           rel="noopener noreferrer">
-            View Details
-        </a>
-    </div>
-</div>
-
-
-            </div>
-        </div>
-
-<!-- Add this AFTER your existing projects-grid div -->
-<!-- Mobile Swiper View -->
-<div class="mobile-swiper-container">
-    <div class="swiper projectsSwiper">
-        <div class="swiper-wrapper">
-            <!-- Project 1 -->
-            <div class="swiper-slide">
-                <div class="project-card">
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.2" data-aos="fade-up">
                     <div class="project-image">
                         <img src="images/project1.png" alt="Project 1">
                     </div>
                     <div class="project-info">
                         <h3>Omni Summarizer</h3>
                         <span class="project-date">Jan 2025 - May 2025</span>
-                        <p>An AI-powered multi-modal summarization tool for text, images, PDFs, and more using state-of-the-art language and vision models.</p>
+                        <p>An AI-powered multi-modal summarization tool for text, images, PDFs, and more using
+                            state-of-the-art language and vision models.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Flask</span>
@@ -221,307 +135,449 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                             <span>ViT-GPT2</span>
                             <span>T5</span>
                         </div>
-                        <a href="https://github.com/ALLURIABISHEK/OMNI_SUMMARIZER" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Details</a>
+                        <a href="https://github.com/ALLURIABISHEK/OMNI_SUMMARIZER" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">View Details</a>
                     </div>
                 </div>
+
+                <!-- Project 2 -->
+
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.2" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="images/KJC.png" alt="KJC-VOX Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>KJC-VOX</h3>
+                        <span class="project-date">Jun 2025 – July 2025</span>
+                        <p>KJC-VOX is a role-based academic feedback and communication platform developed under KJSDC.
+                            It enables secure JWT login, anonymous student feedback, and role-specific dashboards for
+                            students, faculty, and admins. Built using Angular, Java, MongoDB, and Jetty.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>MongoDB</span>
+                            <span>Jetty</span>
+                            <span>JavaMail</span>
+                        </div>
+                        <a href="https://github.com/ALLURIABISHEK/KJC-VOX" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.2" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="images/HEALTHGUARD.png" alt="HealthGuard AI Project">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>HealthGuard AI</h3>
+                        <span class="project-date">Jan 2025 – Present</span>
+
+                        <p>
+                            HealthGuard AI – A Chrome extension that detects and validates medical misinformation in
+                            real-time. It combines AI-powered analysis with intuitive visual feedback to help users
+                            access reliable health information instantly. </p>
+
+                        <div class="project-tech">
+                            <span>Chrome Extension</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Gemini API</span>
+                            <span>REST APIs</span>
+                        </div>
+
+                        <a href="https://github.com/Joeld0013/SDG_CUREINTEL" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
-            
-            <!-- Project 2 -->
-<div class="swiper-slide">
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/KJC.png" alt="KJC VOX Project">
         </div>
-        <div class="project-info">
-            <h3>KJC-VOX</h3>
-            <span class="project-date">June 2025 – July 2025</span>
-            <p>Developed under Kristu Jayanti Software Development Centre (KJSDC), KJC-VOX is a smart academic feedback and communication platform. It enables students to submit anonymous feedback, faculty to view insights, and admins to manage data and analytics — all within a secure, structured system.</p>
-            <div class="project-tech">
-                <span>Java</span>
-                <span>Angular</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
-                <span>MongoDB</span>
-                <span>Jetty</span>
-                <span>JavaMail</span>
+
+        <!-- Add this AFTER your existing projects-grid div -->
+        <!-- Mobile Swiper View -->
+        <div class="mobile-swiper-container">
+            <div class="swiper projectsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                            data-tilt-max-glare="0.2" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="images/project1.png" alt="Project 1">
+                            </div>
+                            <div class="project-info">
+                                <h3>Omni Summarizer</h3>
+                                <span class="project-date">Jan 2025 - May 2025</span>
+                                <p>An AI-powered multi-modal summarization tool for text, images, PDFs, and more using
+                                    state-of-the-art language and vision models.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Flask</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Gemini API</span>
+                                    <span>BLIP-2</span>
+                                    <span>LLaVA</span>
+                                    <span>MiniGPT-4</span>
+                                    <span>ViT-GPT2</span>
+                                    <span>T5</span>
+                                </div>
+                                <a href="https://github.com/ALLURIABISHEK/OMNI_SUMMARIZER" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                            data-tilt-max-glare="0.2" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="images/KJC.png" alt="KJC VOX Project">
+                            </div>
+                            <div class="project-info">
+                                <h3>KJC-VOX</h3>
+                                <span class="project-date">June 2025 – July 2025</span>
+                                <p>Developed under Kristu Jayanti Software Development Centre (KJSDC), KJC-VOX is a
+                                    smart academic feedback and communication platform. It enables students to submit
+                                    anonymous feedback, faculty to view insights, and admins to manage data and
+                                    analytics — all within a secure, structured system.</p>
+                                <div class="project-tech">
+                                    <span>Java</span>
+                                    <span>Angular</span>
+                                    <span>TypeScript</span>
+                                    <span>Tailwind CSS</span>
+                                    <span>MongoDB</span>
+                                    <span>Jetty</span>
+                                    <span>JavaMail</span>
+                                </div>
+                                <a href="https://github.com/ALLURIABISHEK/KJC-VOX" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+                            data-tilt-max-glare="0.2" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="images/HEALTHGUARD.png" alt="Health Guard AI Project">
+                            </div>
+                            <div class="project-info">
+                                <h3>HealthGuard AI</h3>
+                                <span class="project-date">Mar 2025 – Present</span>
+                                <p>
+                                    HealthGuard AI – A Chrome extension that detects and validates medical
+                                    misinformation in real-time. It combines AI-powered analysis with intuitive visual
+                                    feedback to help users access reliable health information instantly.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Chrome Extension</span>
+                                    <span>JavaScript</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Python</span>
+                                    <span>Flask</span>
+                                    <span>Gemini API</span>
+                                    <span>REST APIs</span>
+                                </div>
+                                <a href="https://github.com/Joeld0013/SDG_CUREINTEL" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <a href="https://github.com/ALLURIABISHEK/KJC-VOX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Details</a>
         </div>
-    </div>
-</div>
 
 
-            
-            <!-- Project 3 -->
-        <div class="swiper-slide">
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/HEALTHGUARD.png" alt="Health Guard AI Project">
-        </div>
-        <div class="project-info">
-            <h3>HealthGuard AI</h3>
-            <span class="project-date">Mar 2025 – Present</span>
-            <p>
-HealthGuard AI – A Chrome extension that detects and validates medical misinformation in real-time. It combines AI-powered analysis with intuitive visual feedback to help users access reliable health information instantly.
-            </p>
-            <div class="project-tech">
-                           <span>Chrome Extension</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Python</span>
-            <span>Flask</span>
-            <span>Gemini API</span>
-            <span>REST APIs</span>
-            </div>
-            <a href="https://github.com/Joeld0013/SDG_CUREINTEL" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Details</a>
-        </div>
-    </div>
-</div>
 
-        </div>
-        <!-- Navigation buttons -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
-
-
-        
     </section>
 
 
 
 
-    
 
-<!--======================CERTIFICATIONS======================-->
-<section class="certifications-section" id="certifications">
-  <div class="certifications-container">
-    <div class="section-header">
-      <h2 class="section-title">Certifications</h2>
-      <p class="section-subtitle">I've Earned</p>
-    </div>
 
-    <!-- Desktop View (Grid) -->
-    <div class="cert-container">
-      <div class="visible-certs">
-        <!-- Cert Card 1 -->
-        <div class="cert-card">
-          <img src="images/microsoft.png" alt="Certificate Image" class="cert-img">
-          <h3>Azure Fundamentals <br>- (AZ-900 EXAM)</h3>
-          <div class="cert-provider">
-            <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
-            <span>Microsoft</span>
-          </div>
-          <p class="cert-desc">
-            An introductory certification covering core Azure concepts, cloud services, pricing models, support plans, and security basics—ideal for beginners starting with Microsoft Azure
-          </p>
-          <a href="https://www.credly.com/badges/60133ea3-c1a9-4288-a8d1-74f8cdee7649/linked_in_profile" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-
-        <!-- Cert Card 2 -->
-        <div class="cert-card">
-          <img src="images/Microsoft-Coursera.png" alt="Certificate Image" class="cert-img">
-          <h3>Foundations of Coding Back-End</h3>
-          <div class="cert-provider">
-            <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
-            <span>Microsoft</span>
-            <img src="images/coursera-logo.png" alt="Coursera" class="provider-logo" style="margin-left: 10px;">
-            <span>Coursera</span>
-          </div>
-          <p class="cert-desc">
-            An introductory course covering the core principles of backend development including server-side programming, APIs, databases, and application logic essential for building robust web applications
-          </p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/G8Q34QP5V58K" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-
-        <!-- Cert Card 3 -->
-        <div class="cert-card">
-          <img src="images/AR&VR.png" alt="Certificate Image" class="cert-img">
-          <h3>VIRTUAL AND AUGMENTED REALITY</h3>
-          <div class="cert-provider">
-            <img src="images/ieee_mb_blue.png" alt="IEEE" class="provider-logo">
-            <span>IEEE</span>
-            <img src="images/kristu-jayanti-college-seeklogo.png" alt="KJC" class="provider-logo" style="margin-left: 10px;">
-            <span>KJC</span>
-          </div>
-          <p class="cert-desc">
-            Attended a national-level workshop on Virtual and Augmented Reality, explored 3D environment creation using Three.js, and learned core concepts of interactive rendering and AR integration.
-          </p>
-          <a href="images/AR&VR.png" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-      </div>
-
-      <!-- Hidden Section -->
-      <div class="extra-certs" id="extraCerts">
-        <!-- Cert Card 4 -->
-        <div class="cert-card">
-          <img src="images/java.png" alt="Certificate Image" class="cert-img">
-          <h3>Programming Using Java</h3>
-          <div class="cert-provider">
-            <img src="images/infosys.png" alt="infosys" class="provider-logo">
-            <span>Infosys</span>
-          </div>
-          <p class="cert-desc">
-            Completed a foundational course on core Java programming through Infosys Springboard, covering object-oriented principles, control structures, exception handling, and basic data structures
-          </p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/GENAI-123456" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-
-        <!-- Cert Card 5 -->
-        <div class="cert-card">
-          <img src="images/AI-CERT.png" alt="Certificate Image" class="cert-img">
-          <h3>Introduction to AI</h3>
-          <div class="cert-provider">
-            <img src="images/infosys.png" alt="AWS" class="provider-logo">
-            <span>Infosys</span>
-          </div>
-          <p class="cert-desc">
-            Completed an introductory course on Artificial Intelligence covering the fundamentals of intelligent agents, their environments, and basic decision-making processes in AI systems.
-          </p>
-          <a href="#" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-
-        <!-- Cert Card 6 -->
-        <div class="cert-card">
-          <img src="images/AZURE.png" alt="Certificate Image" class="cert-img">
-          <h3>Azure Basics</h3>
-          <div class="cert-provider">
-            <img src="images/Microsoft_Logo_24px.png" alt="IBM" class="provider-logo">
-            <span>Microsoft</span>
-          </div>
-          <p class="cert-desc">
-            Completed a foundational course on Microsoft Azure, covering key cloud concepts, core Azure services, and real-world applications. Gained hands-on insights into cloud computing, storage, networking, and deployment strategies using Azure tools
-          </p>
-          <a href="#" class="cert-link" target="_blank">View Certificate</a>
-        </div>
-      </div>
-
-      <div class="view-all-btn-container">
-        <button id="toggleCertsBtn" class="btn btn-primary">View All 6 Certifications</button>
-      </div>
-    </div>
-
-    <!-- Mobile Swiper View (Hidden on Desktop) -->
-    <div class="mobile-swiper-container">
-      <div class="swiper certsSwiper">
-        <div class="swiper-wrapper">
-          <!-- Cert Card 1 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/microsoft.png" alt="Certificate Image" class="cert-img">
-              <h3>Azure Fundamentals <br>- (AZ-900 EXAM)</h3>
-              <div class="cert-provider">
-                <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
-                <span>Microsoft</span>
-              </div>
-              <p class="cert-desc">
-                An introductory certification covering core Azure concepts, cloud services, pricing models, support plans, and security basics—ideal for beginners starting with Microsoft Azure
-              </p>
-              <a href="https://www.credly.com/badges/60133ea3-c1a9-4288-a8d1-74f8cdee7649/linked_in_profile" class="cert-link" target="_blank">View Certificate</a>
+    <!--======================CERTIFICATIONS======================-->
+    <section class="certifications-section" id="certifications">
+        <div class="certifications-container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">I've Earned</p>
             </div>
-          </div>
 
-          <!-- Cert Card 2 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/Microsoft-Coursera.png" alt="Certificate Image" class="cert-img">
-              <h3>Foundations of Coding Back-End</h3>
-              <div class="cert-provider">
-                <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
-                <span>Microsoft</span>
-                <img src="images/coursera-logo.png" alt="Coursera" class="provider-logo" style="margin-left: 10px;">
-                <span>Coursera</span>
-              </div>
-              <p class="cert-desc">
-                An introductory course covering the core principles of backend development including server-side programming, APIs, databases, and application logic essential for building robust web applications
-              </p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/G8Q34QP5V58K" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-          </div>
+            <!-- Desktop View (Grid) -->
+            <div class="cert-container">
+                <div class="visible-certs">
+                    <!-- Cert Card 1 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/microsoft.png" alt="Certificate Image" class="cert-img">
+                        <h3>Azure Fundamentals <br>- (AZ-900 EXAM)</h3>
+                        <div class="cert-provider">
+                            <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
+                            <span>Microsoft</span>
+                        </div>
+                        <p class="cert-desc">
+                            An introductory certification covering core Azure concepts, cloud services, pricing models,
+                            support plans, and security basics—ideal for beginners starting with Microsoft Azure
+                        </p>
+                        <a href="https://www.credly.com/badges/60133ea3-c1a9-4288-a8d1-74f8cdee7649/linked_in_profile"
+                            class="cert-link" target="_blank">View Certificate</a>
+                    </div>
 
-          <!-- Cert Card 3 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/AR&VR.png" alt="Certificate Image" class="cert-img">
-              <h3>VIRTUAL AND AUGMENTED REALITY</h3>
-              <div class="cert-provider">
-                <img src="images/ieee_mb_blue.png" alt="IEEE" class="provider-logo">
-                <span>IEEE</span>
-                <img src="images/kristu-jayanti-college-seeklogo.png" alt="KJC" class="provider-logo" style="margin-left: 10px;">
-                <span>KJC</span>
-              </div>
-              <p class="cert-desc">
-                Attended a national-level workshop on Virtual and Augmented Reality, explored 3D environment creation using Three.js, and learned core concepts of interactive rendering and AR integration.
-              </p>
-              <a href="images/AR&VR.png" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-          </div>
+                    <!-- Cert Card 2 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/Microsoft-Coursera.png" alt="Certificate Image" class="cert-img">
+                        <h3>Foundations of Coding Back-End</h3>
+                        <div class="cert-provider">
+                            <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
+                            <span>Microsoft</span>
+                            <img src="images/coursera-logo.png" alt="Coursera" class="provider-logo"
+                                style="margin-left: 10px;">
+                            <span>Coursera</span>
+                        </div>
+                        <p class="cert-desc">
+                            An introductory course covering the core principles of backend development including
+                            server-side programming, APIs, databases, and application logic essential for building
+                            robust web applications
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/G8Q34QP5V58K" class="cert-link"
+                            target="_blank">View Certificate</a>
+                    </div>
 
-          <!-- Cert Card 4 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/java.png" alt="Certificate Image" class="cert-img">
-              <h3>Programming Using Java</h3>
-              <div class="cert-provider">
-                <img src="images/infosys.png" alt="infosys" class="provider-logo">
-                <span>Infosys</span>
-              </div>
-              <p class="cert-desc">
-                Completed a foundational course on core Java programming through Infosys Springboard, covering object-oriented principles, control structures, exception handling, and basic data structures
-              </p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/GENAI-123456" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-          </div>
+                    <!-- Cert Card 3 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/AR&VR.png" alt="Certificate Image" class="cert-img">
+                        <h3>VIRTUAL AND AUGMENTED REALITY</h3>
+                        <div class="cert-provider">
+                            <img src="images/ieee_mb_blue.png" alt="IEEE" class="provider-logo">
+                            <span>IEEE</span>
+                            <img src="images/kristu-jayanti-college-seeklogo.png" alt="KJC" class="provider-logo"
+                                style="margin-left: 10px;">
+                            <span>KJC</span>
+                        </div>
+                        <p class="cert-desc">
+                            Attended a national-level workshop on Virtual and Augmented Reality, explored 3D environment
+                            creation using Three.js, and learned core concepts of interactive rendering and AR
+                            integration.
+                        </p>
+                        <a href="images/AR&VR.png" class="cert-link" target="_blank">View Certificate</a>
+                    </div>
+                </div>
 
-          <!-- Cert Card 5 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/AI-CERT.png" alt="Certificate Image" class="cert-img">
-              <h3>Introduction to AI</h3>
-              <div class="cert-provider">
-                <img src="images/infosys.png" alt="AWS" class="provider-logo">
-                <span>Infosys</span>
-              </div>
-              <p class="cert-desc">
-                Completed an introductory course on Artificial Intelligence covering the fundamentals of intelligent agents, their environments, and basic decision-making processes in AI systems.
-              </p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-          </div>
+                <!-- Hidden Section -->
+                <div class="extra-certs" id="extraCerts">
+                    <!-- Cert Card 4 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/java.png" alt="Certificate Image" class="cert-img">
+                        <h3>Programming Using Java</h3>
+                        <div class="cert-provider">
+                            <img src="images/infosys.png" alt="infosys" class="provider-logo">
+                            <span>Infosys</span>
+                        </div>
+                        <p class="cert-desc">
+                            Completed a foundational course on core Java programming through Infosys Springboard,
+                            covering object-oriented principles, control structures, exception handling, and basic data
+                            structures
+                        </p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/GENAI-123456" class="cert-link"
+                            target="_blank">View Certificate</a>
+                    </div>
 
-          <!-- Cert Card 6 (Swiper Slide) -->
-          <div class="swiper-slide">
-            <div class="cert-card">
-              <img src="images/AZURE.png" alt="Certificate Image" class="cert-img">
-              <h3>Azure Basics</h3>
-              <div class="cert-provider">
-                <img src="images/Microsoft_Logo_24px.png" alt="IBM" class="provider-logo">
-                <span>Microsoft</span>
-              </div>
-              <p class="cert-desc">
-                Completed a foundational course on Microsoft Azure, covering key cloud concepts, core Azure services, and real-world applications. Gained hands-on insights into cloud computing, storage, networking, and deployment strategies using Azure tools
-              </p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
+                    <!-- Cert Card 5 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/AI-CERT.png" alt="Certificate Image" class="cert-img">
+                        <h3>Introduction to AI</h3>
+                        <div class="cert-provider">
+                            <img src="images/infosys.png" alt="AWS" class="provider-logo">
+                            <span>Infosys</span>
+                        </div>
+                        <p class="cert-desc">
+                            Completed an introductory course on Artificial Intelligence covering the fundamentals of
+                            intelligent agents, their environments, and basic decision-making processes in AI systems.
+                        </p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate</a>
+                    </div>
+
+                    <!-- Cert Card 6 -->
+                    <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                        <img src="images/AZURE.png" alt="Certificate Image" class="cert-img">
+                        <h3>Azure Basics</h3>
+                        <div class="cert-provider">
+                            <img src="images/Microsoft_Logo_24px.png" alt="IBM" class="provider-logo">
+                            <span>Microsoft</span>
+                        </div>
+                        <p class="cert-desc">
+                            Completed a foundational course on Microsoft Azure, covering key cloud concepts, core Azure
+                            services, and real-world applications. Gained hands-on insights into cloud computing,
+                            storage, networking, and deployment strategies using Azure tools
+                        </p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+
+                <div class="view-all-btn-container">
+                    <button id="toggleCertsBtn" class="btn btn-primary">View All 6 Certifications</button>
+                </div>
             </div>
-          </div>
+
+            <!-- Mobile Swiper View (Hidden on Desktop) -->
+            <div class="mobile-swiper-container">
+                <div class="swiper certsSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Cert Card 1 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/microsoft.png" alt="Certificate Image" class="cert-img">
+                                <h3>Azure Fundamentals <br>- (AZ-900 EXAM)</h3>
+                                <div class="cert-provider">
+                                    <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
+                                    <span>Microsoft</span>
+                                </div>
+                                <p class="cert-desc">
+                                    An introductory certification covering core Azure concepts, cloud services, pricing
+                                    models, support plans, and security basics—ideal for beginners starting with
+                                    Microsoft Azure
+                                </p>
+                                <a href="https://www.credly.com/badges/60133ea3-c1a9-4288-a8d1-74f8cdee7649/linked_in_profile"
+                                    class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <!-- Cert Card 2 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/Microsoft-Coursera.png" alt="Certificate Image" class="cert-img">
+                                <h3>Foundations of Coding Back-End</h3>
+                                <div class="cert-provider">
+                                    <img src="images/Microsoft_Logo_24px.png" alt="Microsoft" class="provider-logo">
+                                    <span>Microsoft</span>
+                                    <img src="images/coursera-logo.png" alt="Coursera" class="provider-logo"
+                                        style="margin-left: 10px;">
+                                    <span>Coursera</span>
+                                </div>
+                                <p class="cert-desc">
+                                    An introductory course covering the core principles of backend development including
+                                    server-side programming, APIs, databases, and application logic essential for
+                                    building robust web applications
+                                </p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/G8Q34QP5V58K"
+                                    class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <!-- Cert Card 3 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/AR&VR.png" alt="Certificate Image" class="cert-img">
+                                <h3>VIRTUAL AND AUGMENTED REALITY</h3>
+                                <div class="cert-provider">
+                                    <img src="images/ieee_mb_blue.png" alt="IEEE" class="provider-logo">
+                                    <span>IEEE</span>
+                                    <img src="images/kristu-jayanti-college-seeklogo.png" alt="KJC"
+                                        class="provider-logo" style="margin-left: 10px;">
+                                    <span>KJC</span>
+                                </div>
+                                <p class="cert-desc">
+                                    Attended a national-level workshop on Virtual and Augmented Reality, explored 3D
+                                    environment creation using Three.js, and learned core concepts of interactive
+                                    rendering and AR integration.
+                                </p>
+                                <a href="images/AR&VR.png" class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <!-- Cert Card 4 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/java.png" alt="Certificate Image" class="cert-img">
+                                <h3>Programming Using Java</h3>
+                                <div class="cert-provider">
+                                    <img src="images/infosys.png" alt="infosys" class="provider-logo">
+                                    <span>Infosys</span>
+                                </div>
+                                <p class="cert-desc">
+                                    Completed a foundational course on core Java programming through Infosys
+                                    Springboard, covering object-oriented principles, control structures, exception
+                                    handling, and basic data structures
+                                </p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/GENAI-123456"
+                                    class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <!-- Cert Card 5 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/AI-CERT.png" alt="Certificate Image" class="cert-img">
+                                <h3>Introduction to AI</h3>
+                                <div class="cert-provider">
+                                    <img src="images/infosys.png" alt="AWS" class="provider-logo">
+                                    <span>Infosys</span>
+                                </div>
+                                <p class="cert-desc">
+                                    Completed an introductory course on Artificial Intelligence covering the
+                                    fundamentals of intelligent agents, their environments, and basic decision-making
+                                    processes in AI systems.
+                                </p>
+                                <a href="#" class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+
+                        <!-- Cert Card 6 (Swiper Slide) -->
+                        <div class="swiper-slide">
+                            <div class="cert-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-aos="fade-up">
+                                <img src="images/AZURE.png" alt="Certificate Image" class="cert-img">
+                                <h3>Azure Basics</h3>
+                                <div class="cert-provider">
+                                    <img src="images/Microsoft_Logo_24px.png" alt="IBM" class="provider-logo">
+                                    <span>Microsoft</span>
+                                </div>
+                                <p class="cert-desc">
+                                    Completed a foundational course on Microsoft Azure, covering key cloud concepts,
+                                    core Azure services, and real-world applications. Gained hands-on insights into
+                                    cloud computing, storage, networking, and deployment strategies using Azure tools
+                                </p>
+                                <a href="#" class="cert-link" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
-        <!-- Navigation buttons -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!--=============================== Skills Section =========================================-->
- <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section">
         <div class="skills-container">
             <!-- Section Header -->
             <div class="section-header">
@@ -531,9 +587,9 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
 
             <!-- Skills Grid (Top 3) -->
             <div class="skills-grid">
-                
+
                 <!-- Programming Languages -->
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up">
                     <div class="category-header">
                         <i class="fas fa-code category-icon"></i>
                         <h3 class="category-title">Programming Languages</h3>
@@ -567,7 +623,7 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                 </div>
 
                 <!-- Frameworks & Libraries -->
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up">
                     <div class="category-header">
                         <i class="fas fa-layer-group category-icon"></i>
                         <h3 class="category-title">Frameworks & Libraries</h3>
@@ -597,7 +653,7 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                 </div>
 
                 <!-- Databases -->
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up">
                     <div class="category-header">
                         <i class="fas fa-database category-icon"></i>
                         <h3 class="category-title">Databases</h3>
@@ -631,9 +687,9 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
             <!-- Hidden Additional Skills Section (Bottom 3) -->
             <div class="additional-skills-section" id="additionalSkillsSection">
                 <div class="skills-grid">
-                    
+
                     <!-- Tools & Editors -->
-                    <div class="skill-category">
+                    <div class="skill-category" data-aos="fade-up">
                         <div class="category-header">
                             <i class="fas fa-tools category-icon"></i>
                             <h3 class="category-title">Tools & Editors</h3>
@@ -655,22 +711,24 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                                 <i class="fab fa-github skill-icon"></i>
                                 <span class="skill-name">GitHub Desktop</span>
                             </div>
-                       <div class="skill-item">
-  <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" aria-hidden="true">
-    <!-- Background circle with white border -->
-    <circle cx="128" cy="128" r="120" fill="yellow" stroke="white" stroke-width="8"/>
-    <!-- Black rays -->
-    <path d="M36 128h184v12H36zM36 108h184v12H36zM36 148h184v12H36z" fill="black"/>
-    <!-- White crescent -->
-    <path d="M128 8a120 120 0 0 0 0 240c-52-20-80-80-80-120s28-100 80-120z" fill="white"/>
-  </svg>
-  <span class="skill-name">Eclipse</span>
-</div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                    width="24" height="24" aria-hidden="true">
+                                    <!-- Background circle with white border -->
+                                    <circle cx="128" cy="128" r="120" fill="yellow" stroke="white" stroke-width="8" />
+                                    <!-- Black rays -->
+                                    <path d="M36 128h184v12H36zM36 108h184v12H36zM36 148h184v12H36z" fill="black" />
+                                    <!-- White crescent -->
+                                    <path d="M128 8a120 120 0 0 0 0 240c-52-20-80-80-80-120s28-100 80-120z"
+                                        fill="white" />
+                                </svg>
+                                <span class="skill-name">Eclipse</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- APIs -->
-                    <div class="skill-category">
+                    <div class="skill-category" data-aos="fade-up">
                         <div class="category-header">
                             <i class="fas fa-plug category-icon"></i>
                             <h3 class="category-title">Integrated APIs</h3>
@@ -692,7 +750,7 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                     </div>
 
                     <!-- AI/ML Models -->
-                    <div class="skill-category">
+                    <div class="skill-category" data-aos="fade-up">
                         <div class="category-header">
                             <i class="fas fa-microchip category-icon"></i>
                             <h3 class="category-title">AI/ML Models</h3>
@@ -714,10 +772,11 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                                 <i class="fas fa-text-height skill-icon"></i>
                                 <span class="skill-name">ViT-GPT</span>
                             </div>
-                           <div class="skill-item">
-  <i class="fas fa-bolt skill-icon"></i>
-  <span class="skill-name" style="min-width: 150px; display: inline-block;">Gemini 1.5 Flash</span>
-</div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt skill-icon"></i>
+                                <span class="skill-name" style="min-width: 150px; display: inline-block;">Gemini 1.5
+                                    Flash</span>
+                            </div>
                         </div>
                     </div>
 
@@ -727,111 +786,115 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
         </div>
     </section>
 
-  <!-- About Section -->
-<section id="about" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2 class="title-reveal">About Me</h2>
-        </div>
-        <div class="about-content">
-            
-            <div class="about-text" data-aos="fade-left">
-                <h3 class="journey-title">Professional Journey</h3>
-                <p class="journey-text">I'm a passionate technology professional with a unique blend of technical and creative skills. My journey began with a fascination for both computers and art, which led me to pursue a career that combines both worlds.</p>
-                
-                <div class="timeline">
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="timeline-date">2024 - Present</div>
-                        <div class="timeline-content">
-                            <h4>Master of Computer Applications (MCA)</h4>
-                            <p>Kristu Jayanti College, Bangalore</p>
-                            <div class="timeline-badge pulse-animation"></div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-reveal">About Me</h2>
+            </div>
+            <div class="about-content">
+
+                <div class="about-text" data-aos="fade-left">
+                    <h3 class="journey-title">Professional Journey</h3>
+                    <p class="journey-text">I'm a passionate technology professional with a unique blend of technical
+                        and creative skills. My journey began with a fascination for both computers and art, which led
+                        me to pursue a career that combines both worlds.</p>
+
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Master of Computer Applications (MCA)</h4>
+                                <p>Kristu Jayanti College, Bangalore</p>
+                                <div class="timeline-badge pulse-animation"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="timeline-date">2021 - 2024</div>
-                        <div class="timeline-content">
-                            <h4>Bachelor of Computer Applications (BCA)</h4>
-                            <p>Lowry Adventist College, Bangalore</p>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-date">2021 - 2024</div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Computer Applications (BCA)</h4>
+                                <p>Lowry Adventist College, Bangalore</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <div class="timeline-content">
-                            <h4>Schooling</h4>
-                            <p>Metas Seventh Day Adventist Higher Secondary School, Nuzvid</p>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <div class="timeline-content">
+                                <h4>Schooling</h4>
+                                <p>Metas Seventh Day Adventist Higher Secondary School, Nuzvid</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="timeline-date">2014 - 2019</div>
-                        <div class="timeline-content">
-                            <h4>Schooling</h4>
-                            <p>Seventh-Day Adventist High School, Vempalli</p>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="timeline-date">2014 - 2019</div>
+                            <div class="timeline-content">
+                                <h4>Schooling</h4>
+                                <p>Seventh-Day Adventist High School, Vempalli</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title" data-aos="fade-down">Get In Touch</h2>
-            <p class="section-subtitle" data-aos="fade-down" data-aos-delay="100">Let's work together</p>
-            <div class="title-decoration" data-aos="fade-right" data-aos-delay="200"></div>
-        </div>
-        
-        <div class="contact-grid">
-            <!-- Contact Information -->
-            <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
-                <div class="info-card">
-                    <h3>Contact Information</h3>
-                    <div class="info-items">
-                        <div class="info-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-down">Get In Touch</h2>
+                <p class="section-subtitle" data-aos="fade-down" data-aos-delay="100">Let's work together</p>
+                <div class="title-decoration" data-aos="fade-right" data-aos-delay="200"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <div class="info-items">
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <a href="mailto:aaarts45516@gmail.com">alluriabishekkumar@gmail.com</a>
+                                    <div class="shine-effect"></div>
+                                </div>
                             </div>
-                            <div class="info-content">
-                                <a href="mailto:aaarts45516@gmail.com">alluriabishekkumar@gmail.com</a>
-                                <div class="shine-effect"></div>
+
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="150">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <a href="tel:+919704751165">+91 9704751165</a>
+                                    <div class="shine-effect"></div>
+                                </div>
+                            </div>
+
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span>Bangalore , India</span>
+                                    <div class="shine-effect"></div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="info-item" data-aos="fade-up" data-aos-delay="150">
-                            <div class="info-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <a href="tel:+919704751165">+91 9704751165</a>
-                                <div class="shine-effect"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <span>Bangalore , India</span>
-                                <div class="shine-effect"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-container">
-                        <div class="social-links">
-                            <a href="https://github.com/ALLURIABISHEK" class="social-link" data-aos="zoom-in" data-aos-delay="100">
-                                <i class="fab fa-github"></i>
-                                <span class="tooltip">GitHub</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/alluri-abishek-kumar/" class="social-link" data-aos="zoom-in" data-aos-delay="150">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span class="tooltip">LinkedIn</span>
-                            </a>
-                           <!--- <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="200">
+
+                        <div class="social-container">
+                            <div class="social-links">
+                                <a href="https://github.com/ALLURIABISHEK" class="social-link" data-aos="zoom-in"
+                                    data-aos-delay="100">
+                                    <i class="fab fa-github"></i>
+                                    <span class="tooltip">GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/alluri-abishek-kumar/" class="social-link"
+                                    data-aos="zoom-in" data-aos-delay="150">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span class="tooltip">LinkedIn</span>
+                                </a>
+                                <!--- <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="200">
                                 <i class="fab fa-twitter"></i>
                                 <span class="tooltip">Twitter</span>
                             </a>
@@ -839,67 +902,79 @@ HealthGuard AI – A Chrome extension that detects and validates medical misinfo
                                 <i class="fab fa-instagram"></i>
                                 <span class="tooltip">Instagram</span>
                             </a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
+                    <form id="contactForm">
+                        <!-- These fields will be used but won't appear in the email -->
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="150">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <!-- Only these two fields will affect the email -->
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subject</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="250">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="300">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="hover-effect"></div>
+                        </button>
+                    </form>
+                </div>
             </div>
-            
-            <!-- Contact Form -->
-         <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
-    <form id="contactForm">
-        <!-- These fields will be used but won't appear in the email -->
-        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
-            <input type="text" id="name" name="name" required>
-            <label for="name">Your Name</label>
-            <div class="underline"></div>
         </div>
-        
-        <div class="form-group" data-aos="fade-up" data-aos-delay="150">
-            <input type="email" id="email" name="email" required>
-            <label for="email">Your Email</label>
-            <div class="underline"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-wave">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Fighter. All rights reserved.</p>
+
+                <div class="footer-shimmer"></div>
+            </div>
         </div>
-        
-        <!-- Only these two fields will affect the email -->
-        <div class="form-group" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" id="subject" name="subject">
-            <label for="subject">Subject</label>
-            <div class="underline"></div>
-        </div>
-        
-        <div class="form-group" data-aos="fade-up" data-aos-delay="250">
-            <textarea id="message" name="message" required></textarea>
-            <label for="message">Your Message</label>
-            <div class="underline"></div>
-        </div>
-        
-        <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="300">
-            <span>Send Message</span>
-            <i class="fas fa-paper-plane"></i>
-            <div class="hover-effect"></div>
-        </button>
-    </form>
-</div>
-        </div>
-    </div>
-</section>
+    </footer>
+    <!-- Liquid UI Gooey Filter -->
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -12"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
 
-<!-- Footer -->   
-<footer class="footer-wave">
-    <div class="container">
-        <div class="footer-content">
-            <p class="copyright">&copy; 2025 Fighter. All rights reserved.</p>
-          
-            <div class="footer-shimmer"></div>
-        </div>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-
-
-
+    <!-- Scripts - Load in correct order -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
